@@ -4,52 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xacademy Clase 1 maquetacion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">   
+<script src="https://kit.fontawesome.com/3c27ee3c9d.js" crossorigin="anonymous"></script>
+<title>Xacademy Clase 1 maquetacion</title>
     <style>
         body {
             margin: 0;
         }
         p {
             margin-right: 40px;
+            font-family: Inter;
+            
+            font-size: 12.5px;
+            cursor:pointer;
+
+            
         }
         h1 {
-            margin: 0px 400px;
+            margin: 0px 300px;
             text-align: center;
+            
+            margin-top: 70px;
+           
+
+
+        }
+        p:hover{
+            color:blueviolet;
         }
         button.redondo {
             background-color: white;
-            border: 1px solid black;
+            border: 2px solid black;
             border-radius: 25px;
             padding: 0px 20px;
             height: 32px;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            cursor:pointer;
+            font-size: 14px;
         }
+        button.redondo:hover{
+            background-color: black;
+            color:white
+        }
+        button.redondo2:hover{
+            background-color: blueviolet;
+            color:white
+        }
+        button.redondo2 {
+            background-color: white;
+            border: 2px solid blueviolet;
+            cursor:pointer;
+            
+            border-radius: 25px;
+            padding: 0px 20px;
+            height: 32px;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            color:blueviolet;
+            
+        }
+
+
         div#introduction-actions {
             display: flex;
             justify-content: center;
         }
+
+        #introduction-text { 
+            display: flex;
+            align-items: center;          
+            
+            font-family: Inter,Arial, Helvetica, sans-serif;
+            font-size: 14px;                                          
+
+        }
+        i{
+
+            margin-left: 20px;
+            cursor:pointer;
+        }
+        i:hover{
+            color:blueviolet;
+        }
+       
     </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 15px 50px; justify-content: space-between">
         <div id="header-left">
             <img src="logo.svg">
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
+        <div id="header-right" style="display: flex; align-items: center; ">
             <p>Nosotros</p>
             <p>Programas</p>
-            <p>Capaciontaciones</p>
+            <p>Capacitaciones</p>
             <p>Alianzas</p>
             <p>Contacto</p>
             <button class="redondo">Sumate +</button>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+
+            
         </div>
+
+        
     </div>
-    <div id="introduction" style="padding: 48px;">
+    <div id="introduction" style="padding: 40px;">
         <div id="introduction-text">
             <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
         <div id="introduction-actions" style="margin-top: 25px;">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo2" style="margin-left: 14px;">Sumate +</button>
         </div>
     </div>
 </body>
